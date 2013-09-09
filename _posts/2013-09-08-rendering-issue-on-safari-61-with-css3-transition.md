@@ -27,13 +27,17 @@ After some investigation, I found the cause of this issue under my current imple
 	}
 
 
-Please visit this [demo page](http://cdpn.io/oInqL) for a simple and complete case. By removing `backface-visibility`, this issues is somehow fixed. However, I added this CSS property for the purpose of removing a flickering effect when toggling the menu (PS. [this article](http://blog.teamtreehouse.com/increase-your-sites-performance-with-hardware-accelerated-css) mentioned about this.)
+Please visit this [demo page](http://cdpn.io/oInqL) for a simple and complete case. Scan below QR code to open in your mobile browser.
+
+<image src="/assets/images/iOS7_transition_issue_demo1.png" width="160" height="160" />
+
+By removing `backface-visibility`, this issues is somehow fixed. However, I added this CSS property for the purpose of removing a flickering effect when toggling the menu (PS. [this article](http://blog.teamtreehouse.com/increase-your-sites-performance-with-hardware-accelerated-css) mentioned about this.)
 
 Looks like I'm in a dilemma.
 
 #### The answer?!
-When I was debuging this issue on iOS7 with Safari developer tool, I found an interesting phenomenon. In Safari developer tool, I tried to monitor _**Layout and Rendering**_ under _**Timelines**_ tab to look for any rendering clue, but then the menu worked well unexpectedly! Once I stopped recording, the issue came again. That made me wonder what if I make the menu visible when page loading and hide menu after page loads? After some test, this seems an answer to  both issues (just hope PM would give it a green light). Check another [demo page](http://cdpn.io/iJncf) for this.
-
+When I was debuging this issue on iOS7 with Safari developer tool, I found an interesting phenomenon. In Safari developer tool, I tried to monitor _**Layout and Rendering**_ under _**Timelines**_ tab to look for any rendering clue, but then the menu worked well unexpectedly! Once I stopped recording, the issue came again. That made me wonder what if I make the menu visible when page loading and hide menu after page loads? After some test, this seems an answer to  both issues (just hope PM would give it a green light). Check another [demo page](http://cdpn.io/iJncf) for this, or scan below QR code to open in your mobile browser.
+<image src="/assets/images/iOS7_transition_issue_demo2.png" width="160" height="160" />
 ---
 #### About
 [**&lt;Those interesting browser issues&gt;**](/categories.html#those%20interesting%20browser%20issues-ref) is a column for me to share those interesting bugs I encountered when I developed the [StubHub](https://m.stubhub.com) mobile web site. Each article will only tell about one issue - which is simple, rare and interesting.
