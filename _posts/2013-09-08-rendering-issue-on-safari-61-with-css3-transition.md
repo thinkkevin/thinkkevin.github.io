@@ -9,7 +9,7 @@ tags: [CSS3, browser]
 
 Apple is expected to introduce new iPhone model on Tuesday (Sept 10th), which will carry a new version of mobile Safari browser. And just a few days ago (Sept 5th), I got an Apple Developer email to download their latest [Safari 6.1 Seed 7](https://developer.apple.com/downloads/index.action?name=Safari). Running [StubHub](https://m.stubhub.com) mobile web site on these, an interesting issue came out.
 
-#### What's he issue?
+#### What's the issue?
 [StubHub](https://m.stubhub.com) mobile web has a responsive navigation menu, when user accesses it on smartphone, the navigation menu will hide at left side of screen by default with a Hamburger button to toggle it. On iOS 6 and other webkit browser, the menu works well and can open/close smoothly by leveraging CSS3 transition and 3D acceleration. Recommend to read [this](http://blog.teamtreehouse.com/increase-your-sites-performance-with-hardware-accelerated-css) to learn more about CSS3 transition with hardward accleration.
 
 When check it on iOS7 preview version and Safari 6.1, the navigation menu is gone! See below screenshot:
